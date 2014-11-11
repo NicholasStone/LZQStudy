@@ -1,15 +1,44 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>LZQStudy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="bsas.css" /><!--载入css样式-->
+<title>欢迎登录蓝之青</title>
+<style>
+	body{
+		background-image: url:('image1.jpg');/*背景图片*/
+	}
+</style>
 </head>
 <body>
-	<h1>test</h1>
-	
-	<h2>杨晓磊</h2>
-		<h2>杨晓磊</h2>
-			<h2>杨晓磊</h2>
-				<h2>杨晓磊</h2>
+	<div >
+		<div>
+			<header>
+				<h1 class="font_style_title"><strong>蓝之青欢迎您</strong></h1><!--第一排字-->
+				<p>请登录</p>
+			</header>
+		</div>
+		<div>
+			<form action="check.jsp" mothed="post"><!--表单-->
+			<table align="center" class="background"><!--框框-->
+				<tr><!-- 第一行-->
+					<td class="font_style_body">用户名：</td>
+					<td><input type="text" name="username" placeholder="用户名" required="required" pattern="^[A-z]{5,10}$" title="请输入5~10个英文字母。"/></td>
+				</tr>
+				
+				<tr>
+					<td class="font_style_body">密&nbsp;&nbsp;码：</td>
+					<td><input type="password" name="password" placeholder="密码" required="required" pattern="^(?![0-9]+$)(?![A-z]+$)[0-9A-z]{6,16}$" title="请输入6~16位同时拥有数字及字母的密码"/></td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;</td>
+					<td><input type="submit" value="登录"/></td>
+				</tr>
+				
+			</table>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
